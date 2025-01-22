@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("Netflix-Background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    background-size: max(1000px, 100vw);
+    position: relative;
+}
+
+/*it mean the .box class inside .main class is selected*/
+.main .box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.7;
+    background-color: black;
+    position: absolute;
+    top: 0;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80vw;
+    margin: auto;
+    height: 120px;
+}
+
+nav img {
+    width: 150px;
+    color: red;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: "Poppins", serif;
+    gap: 23px;
+    padding: 0 25px;
+}
+
+/*this mean only effect the nth-child(1,2 or 3 ) after the .hero not every first child inside the .hero like this .hero :nth-child(1,2 or 3), this will effect evry firct child inside .hero */
+
+.hero> :nth-child(1) {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 70px;
+    max-width: 40vw;
+    text-align: center;
+
+}
+
+.hero>:nth-child(2) {
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.separation {
+    height: 6px;
+    background-color: rgb(79, 79, 79);
+
+}
+
+.btn {
+    padding: 3px 10px;
+    font-weight: 400;
+    background-color: rgba(248, 248, 248, 0.185);
+    color: white;
+    border-radius: 2px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+.main .lang {
+    border: 2px solid white;
+}
+
+.lang img {
+    width: 6px;
+    color: white;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 6px 25px;
+}
+
+.main input {
+    background-color: rgba(40, 40, 40, 0.3);
+    color: white;
+    padding: 7px 40px 7px 3px;
+    border-radius: 2px;
+    font-size: 10px;
+    border: 1px solid rgba(208, 208, 208, 0.3);
+}
+
+.hero-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+
+}
+
+/*Section-first CSS*/
+
+.first> :nth-child(1) {
+    margin: 44px 0px 11px 196px;
+    color: white;
+    font-size: 30px;
+}
+
+.select {
+    display: flex;
+    margin-left: 192px;
+    align-items: center;
+    gap: 10px;
+}
+
+.select select {
+    background-color: rgba(69, 69, 69, 0.3);
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.container {
+    margin: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .card img {
+    border-radius: 14px;
+}
+
+.card {
+
+    transition: scale 0.3s;
+}
+
+.container .card:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+/*Section second*/
+
+.second>span {
+    margin: 60px 0px 15px 140px;
+    color: white;
+    font-size: 30px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.reason {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 297px;
+    background-image: linear-gradient(120deg, rgba(32, 0, 193, 0.052), rgba(255, 0, 55, 0.029));
+    border: 1px solid white;
+    border-radius: 12px;
+    text-align: start;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: scale 0.3s;
+}
+
+
+.reason :nth-child(1) {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+
+}
+
+.reason :nth-child(2) {
+    margin: 10px;
+}
+
+.reason:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+/*Section Three*/
+
+.three>span {
+    margin: 42px 0px 15px 140px;
+    color: white;
+    font-size: 30px;
+}
+
+.box {
+    height: 84px;
+    width: 70vw;
+    background-color: rgba(133, 133, 133, 0.297);
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    color: white;
+}
+
+.box {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+
+.box :nth-child(2) {
+    font-size: 45px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+
+/*Section footer*/
+.footer :first-child {
+    color: white;
+    text-align: center;
+}
+.email-start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+}
+
+.email-start :nth-child(1) {
+    background-color: rgba(40, 40, 40, 0.3);
+    padding: 15px 169px 15px 11px;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    border-radius: 2px;
+    font-size: 10px;
+    border: 1px solid rgba(208, 208, 208, 0.3);
+}
+
+.email-start :nth-child(2) {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    padding: 8px 34px;
+}
+.footer> :nth-child(3) {
+    text-align: left;
+    color: white;
+    padding: 12px 162px;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+.grid{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: start;
+    width: 75vw;
+    margin: auto;
+    gap: 15px;
+    
+}
+
+.grid span{
+    text-decoration: underline;
+    color: white;
+    font-size: 14px;
+    text-align: start;
+}
+
+.footer select{
+color: white;
+background-color: rgba(125, 125, 125, 0.171);
+border: 1px solid rgba(177, 177, 177, 0.682);
+margin: 30px 152px;
+padding: 8px;
+}
+
+
